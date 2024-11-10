@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayangLayangActivity">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung Luas dan Keliling Layang-Layang"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+    <!-- Input Diagonal 1 -->
+    <EditText
+        android:id="@+id/et_diagonal_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Diagonal 1"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"/>
+
+    <!-- Input Diagonal 2 -->
+    <EditText
+        android:id="@+id/et_diagonal_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Diagonal 2"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/et_diagonal_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"/>
+
+    <!-- Input Sisi 1 -->
+    <EditText
+        android:id="@+id/et_sisi_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Sisi 1"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/et_diagonal_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"/>
+
+    <!-- Input Sisi 2 -->
+    <EditText
+        android:id="@+id/et_sisi_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Sisi 2"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/et_sisi_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"/>
+
+    <!-- Tombol Hitung Luas -->
+    <Button
+        android:id="@+id/btn_hitung_luas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hitung Luas"
+        app:layout_constraintTop_toBottomOf="@id/et_sisi_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"/>
+
+    <!-- Tombol Hitung Keliling -->
+    <Button
+        android:id="@+id/btn_hitung_keliling"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hitung Keliling"
+        app:layout_constraintTop_toBottomOf="@id/btn_hitung_luas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"/>
+
+    <!-- Tampilan Hasil -->
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil: "
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_hitung_keliling"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

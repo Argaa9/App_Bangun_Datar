@@ -13,6 +13,30 @@
         android:theme="@style/Theme.AppKalkulator"
         tools:targetApi="31">
         <activity
+            android:name=".activity_jajar_genjang"
+            android:exported="false" />
+        <activity
+            android:name=".activity_belahketupat"
+            android:exported="false" />
+        <activity
+            android:name=".activity_layang"
+            android:exported="false" />
+        <activity
+            android:name=".activity_trapesium"
+            android:exported="false" />
+        <activity
+            android:name=".activity_persegipanjang"
+            android:exported="false" />
+        <activity
+            android:name=".activity_lingkaran"
+            android:exported="false" />
+        <activity
+            android:name=".activity_persegi"
+            android:exported="false" />
+        <activity
+            android:name=".activity_segitiga"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

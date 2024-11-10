@@ -79,6 +79,10 @@ dependencies {
 
     // Opsional: Navigation Compose
     implementation("androidx.navigation:navigation-compose:2.6.0")
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
 
     // Testing Dependencies
     testImplementation(libs.junit)
